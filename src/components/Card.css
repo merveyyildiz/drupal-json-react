@@ -1,34 +1,14 @@
-
-.button{
-  width:50px;
-  height:55px;
-  background-color:skyblue;
-  display:flex;
-float:right;  
-margin-top:5%;
-margin-left:90%;
-}
 body{
   display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.img{
-  width:22%;
-  height:50%;
-  margin:10px;
+  flex-direction:column;
 }
 .frame{
-  height:250px;
+  width:75%;
+  margin:auto;
+  display:block;
 }
-.frame1{
-  display: flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-}
-@media only screen and (min-width: 1200px) {
-  .frame{
 
-  height:550px;
-}
+.frame div {
+    position: relative;
+    display: inline-block;
 }

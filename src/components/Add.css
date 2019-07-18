@@ -1,0 +1,32 @@
+.add-button{
+  width:80%;
+  height:50px;
+  margin:0 5% 2% 5%;
+  background-color:#6cb33f;
+  color:white;
+  text-align:center;
+  font-size:20px;
+  border-radius:5%;
+}
+.add-input{
+  width:40%;
+  height:40px;
+  margin:0 0 0 5%;
+  font-size:16px;
+  border:1px solid skyblue;
+  border-radius:10px;
+  padding-left:10px;
+}
+.add-submit{
+  width:10%;
+  height:40px;
+  margin:0 3%;
+  background-color:#6cb33f;
+  border-radius:10px;
+  color:white;
+ font-size:20px;
+ 
+}
+.add-input:focus{
+  outline:none;
+}

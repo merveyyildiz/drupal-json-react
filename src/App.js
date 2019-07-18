@@ -1,8 +1,8 @@
 import React from 'react';
-import Ornek from './components/Ornek'
+import Card from './components/Card'
 function App() {
   return (
-    <Ornek/>
+    <Card/>
   );
 }
 
