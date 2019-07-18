@@ -1,0 +1,17 @@
+.search{
+  width:80%;
+  height:50px;
+  margin:5%;
+  border:1px solid skyblue;
+  border-radius: 10px;  
+  padding-left:15px;
+}
+
+input:focus {
+  border:2px solid purple;
+  border-radius: 10px; 
+  font-size:15px;
+}
+.search:focus {
+    outline: none;
+}

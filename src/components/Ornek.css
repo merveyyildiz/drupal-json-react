@@ -1,0 +1,15 @@
+body{
+  display:flex;
+  flex-direction:column;
+}
+
+.frame{
+  width:75%;
+  margin:auto;
+  display:block;
+}
+
+.frame div {
+    position: relative;
+    display: inline-block;
+}
