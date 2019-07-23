@@ -1,0 +1,29 @@
+.page-component{
+  width:35%;
+  margin-left:25%;
+  font-size:22px;
+}
+.text {
+  background-color: #6cb33f;  
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.update-input{
+  width:150px;
+  height:30px;
+  margin:3%;
+  font-size:15px;
+   border:1px solid purple;
+   padding-left:10px;
+}
+.update-submit{
+  width:60px;
+  height:40px;
+  border-radius:5%;
+  background-color:#6cb33f;
+
+}
+.update-input:focus{
+  outline:none;
+}

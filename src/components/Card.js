@@ -8,11 +8,12 @@ export default class Card extends Component {
   state = {
     datas: [],
     realy_data: [],
-    searchString: ''
+    searchString: '',
+    newtitle:""
   };
-
+  
   componentDidMount() {
-    for (let i = 0; i < 8; i++) {
+ for (let i = 0; i < 6; i++) {
       axios
         .get(
           'http://samet.drp-dev.com/merve/jsonapi/node/gallery?include=field_gallery_image'
@@ -20,9 +21,12 @@ export default class Card extends Component {
         .then(res => {
           const title = res.data.data[i].attributes.title;
           const id= res.data.data[i].id;
+          const img = res.data.included[i].attributes.uri.url;
+          console.log(img);
           const data = {
             title: title,
-            id:id
+            id:id,
+            url:img,
           };
           const old = this.state.datas;
           const datas = [...old, data];
@@ -42,19 +46,23 @@ export default class Card extends Component {
       this.setState({ datas: this.state.realy_data });
     }
   };
-
+  
   render() {
     const { datas } = this.state;
     const data = datas.map((data, index) => {
-      return <Datas key={index} title={data.title}  id={data.id} />;
+      return ( <Datas key={index} title={data.title}  id={data.id} src={data.url} clicked={this.changePage}/>);
     });
     return (
       <>
       <h1>Drupal 8 Json Apı Get, Post, Delete, Patch</h1>
         <Search handleChange={this.handleChange} />
         <Add/>
-        <div className="frame">{data}</div>
+        <div className="frame">
+        {data}
+        </div>
+      
       </>
     );
+    }
   }
-}
+
